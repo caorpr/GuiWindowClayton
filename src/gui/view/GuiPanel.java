@@ -3,6 +3,7 @@ package gui.view;
 import javax.swing.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 import gui.controller.GuiController;
 
 
@@ -32,6 +33,7 @@ public class GuiPanel extends JPanel
 	private void setupPanel()
 	{
 		this.setLayout(baseLayout);
+		this.setBackground(Color.RED); // changed the background of the Panel (the background).
 		this.add(firstButton);
 		this.add(firstTextField);
 	}
@@ -51,7 +53,7 @@ public class GuiPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent click)
 			{
-				
+				System.out.println("what is up bro!");
 			}
 		});
 	}
