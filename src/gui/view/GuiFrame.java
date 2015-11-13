@@ -24,4 +24,9 @@ public class GuiFrame extends JFrame
 		this.setSize(400, 400);
 		this.setVisible(true);
 	}
+	
+	public GuiController getBaseController()
+	{
+		return baseController;
+	}
 }
